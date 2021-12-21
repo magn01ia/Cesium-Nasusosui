@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <script src="https://cesium.com/downloads/cesiumjs/releases/1.88/Build/Cesium/Cesium.js"></script>
+  <link href="https://cesium.com/downloads/cesiumjs/releases/1.88/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+</head>
+<body>
+  <div id="Cesium-Nasusoui"></div>
+  <script>
+    Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI3NzhiMjYxNi02Zjc0LTQ2ODItOGFkNS04ZWY4NTBhZDBlOTIiLCJpZCI6NzcxOTgsImlhdCI6MTY0MDA3NzIwOX0.E6tNAC4yZ3PfHjnSoItDTiUrsUXVAo078rvaAfy8mno';
+    const viewer = new Cesium.Viewer('cesiumContainer', {
+      terrainProvider: Cesium.createWorldTerrain()
+    });    
+    const buildingTileset = viewer.scene.primitives.add(Cesium.createOsmBuildings());   
+    viewer.camera.flyTo({
+      destination : Cesium.Cartesian3.fromDegrees(-122.4175, 37.655, 400),
+      orientation : {
+        heading : Cesium.Math.toRadians(0.0),
+        pitch : Cesium.Math.toRadians(-15.0),
+      }
+    });
+  </script>
+ </div>
+</body>
+</html>
