@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Cesium-Nasusosui
 
 那須疎水のWEBMAP、Cesium版  
@@ -17,6 +16,3 @@ Leaflet版同様疎水データは作成中の段階なので順次更新して�
 ## 更新履歴
 20211222  
 CDNでCesium導入
-=======
-# CesiumJS_Test
->>>>>>> parent of a31502a (Update README.md)
