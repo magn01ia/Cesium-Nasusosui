@@ -14,8 +14,9 @@ var viewer = new Cesium.Viewer('cesiumContainer', {
       credit: new Cesium.Credit('<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank">地理院タイル</a>,<a href="https://github.com/magn01ia" target="_blank">magn01ia</a> ')
     }),
   });
+viewer.dataSources.add(Cesium.KmlDataSource.load("/data/nasusosui.kml"));
 
-  viewer.camera.setView({
+viewer.camera.setView({
     destination: Cesium.Cartesian3.fromDegrees(140.0000,36.6000, 20000),
     orientation: {
       heading: 0, 
@@ -23,5 +24,3 @@ var viewer = new Cesium.Viewer('cesiumContainer', {
       roll: 0
     }
 });
-
-viewer.dataSources.add(Cesium.KmlDataSource.load("/data/nasusosui.kml"));
