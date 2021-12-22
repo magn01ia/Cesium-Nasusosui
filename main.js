@@ -1,6 +1,6 @@
 var viewer = new Cesium.Viewer('cesiumContainer', {
     animation : false,
-    baseLayerPicker: true,
+    baseLayerPicker: false,
     fullscreenButton: true,
     geocoder: false,
     homeButton: false,
@@ -16,11 +16,12 @@ var viewer = new Cesium.Viewer('cesiumContainer', {
   });
 
   viewer.camera.setView({
-    destination: Cesium.Cartesian3.fromDegrees(139.7500,36.3000, 50000),
+    destination: Cesium.Cartesian3.fromDegrees(140.0000,36.6000, 20000),
     orientation: {
       heading: 0, 
-      pitch: -1.3, 
+      pitch: -0.5, 
       roll: 0
     }
 });
 
+viewer.dataSources.add(Cesium.KmlDataSource.load("/data/nasusosui.kml"));
