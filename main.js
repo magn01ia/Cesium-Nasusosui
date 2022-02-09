@@ -1,6 +1,6 @@
 var viewer = new Cesium.Viewer('cesiumContainer', {
     animation : false,
-    baseLayerPicker: false,
+    baseLayerPicker: true,
     fullscreenButton: true,
     geocoder: false,
     homeButton: false,
