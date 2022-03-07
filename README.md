@@ -1,8 +1,7 @@
 # Cesium-Nasusosui
 
 那須疎水のWEBMAP、Cesium版  
-[Cesium-Nasusoui Demo](https://magn01ia.github.io/Cesium-Nasusosui/)  
-とりあえずCesium本体はCDNで実装。  
+[Cesium-Nasusoui Demo](https://magn01ia.github.io/Cesium-Nasusosui/)    
 
 ## 概要  
 以前からLeafletで作成中の那須疎水WEBマップをCesiumに実装したものです。  
