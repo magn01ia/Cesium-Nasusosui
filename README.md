@@ -14,6 +14,9 @@ Leaflet版同様疎水データは作成中の段階なので順次更新して�
 詳しくはこちら→[Leaflet-Nasusoui](https://github.com/magn01ia/Nasusosui)
 
 ## 更新履歴
+20220623  
+地形データとしてCesium terrainを使用するようにしました。  
+流路データをgeojsonで読み込むよう変更しました。  
 20211222  
 CDNでCesium導入  
 作成中の流路データをkmlで追加
